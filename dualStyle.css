@@ -1,0 +1,27 @@
+/*!global */
+* {
+  padding: o;
+  margin: 0;
+}
+
+:root {
+  --darkest: rgb(0, 0, 0);
+  --dark: #464866;
+  --neutral: #aaabb8;
+  --light: #2e9cca;
+  --lightest: #29648a;
+}
+
+.dark {
+  background-color: var(--darkest);
+  color: var(--light);
+  border: solid 1px var(--neutral);
+  border-radius: 15px;
+}
+
+.light {
+  background-color: var(--lightest);
+  color: var(--dark);
+  border: solid 1px var(--neutral);
+  border-radius: 15px;
+}

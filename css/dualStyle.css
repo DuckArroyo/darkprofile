@@ -29,8 +29,10 @@
   border-radius: 15px;
 }
 
-.header-section {
+.container {
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 /* W3 School  */
@@ -50,7 +52,7 @@
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: rgba(255, 255, 255,.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -61,20 +63,18 @@
   overflow: hidden;
 }
 
-
-/* ================= FROM CODEPEN */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+/* ================= FROM FreeCodeCamp */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 
 body {
-  background-color: #0A2344;
-  font-family: 'rubik', sans-serif;
+  background-color: #0a2344;
+  font-family: "rubik", sans-serif;
 }
 
 h1 {
   text-align: center;
   margin: 40px 0;
 }
-
 
 .accordion {
   width: 800px;
@@ -98,7 +98,7 @@ h1 {
 }
 
 .accordion .label::before {
-  content: '+';
+  content: "+";
   color: black;
   position: absolute;
   top: 50%;
@@ -129,6 +129,6 @@ h1 {
 }
 
 .accordion .container.active .label::before {
-  content: '-';
+  content: "-";
   font-size: 30px;
 }

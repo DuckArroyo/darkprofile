@@ -9,20 +9,15 @@
     rel="icon" 
     type="image/x-icon"/>
     <link rel="stylesheet" href="./css/dualStyle.css">
-    <link rel="stylesheet" href="./button.css">
 </head>
 
-<body class="dark" class="light">
-    <div id="btn-location">
-        <label class="switch">
-            <input type="checkbox" id="mode">
-            <span class="slider round"></span>
-        </label>
-    </div>
+<body id="enchilada" class="light">
+ <button type="button" id="modeToggle">Toggle</button>
 <div class="container">
         <div>
-                <h1>Rafael Arroyo</h1>
+                <h1>Rafael Arroyo</h1> 
                 <h2>Entry level <strong>fullstack</strong> Web Developer</h2>
+                
         </div>
         <div class="links">
             <a href="https://www.linkedin.com/in/duckarroyo/" target="_blank">Linked In</a>
@@ -35,6 +30,8 @@
     </div>
 
         <!-- W3Schools -->
+<div class="container">
+
         <button class="accordion">Section 1</button>
             
             <div class="panel">
@@ -43,52 +40,51 @@
 
         <button class="accordion">Section 2</button>
             <div class="panel">
-                <p>I became interested in Web Development after I started working on Power Automate to create the department workflows in Microsoft Teams. After a few weeks of research and trial and error I was able to digitize all our processes.  I can say that we have avoided a reduction of work because of this implementation. After seeing the power of web applications, I began research which led me to the Coding bootcamp I am enrolled in. It is week 3 and so far it is a healthy challenge. </p>
+                <p>I became interested in Web Development after I started working on Power Automate to create the department workflows in Microsoft Teams. After a few weeks of research and trial and error I was able to digitize all our processes.  I can say that we have avoided a reduction of work because of this implementation. After seeing the power of web applications, I began research which led me to the Coding bootcamp I am enrolled in. It is week 16 and so far it is a healthy challenge. </p>
             </div>
 
         <button class="accordion">5 year plan</button>
             <div class="panel">
                 <p>I am interested in becoming a proficient full stack web developer within the nezt year and develop my skill and knowledge in JavaScript. My current skills supass my confidence in my abilities.</p>
             </div>
+</div>
+    
+
+
+    <!-- Questions -->
+  <!-- Event listener, not sure what I am doing wrong -->
+<!-- toggle is  -->
+        <script>
+            function stateChange() {
+                event.preventDefault();
+                var element = document.getElementById("enchilada");
+                if(element.classList === "dark") {
+                    element.classList.toggle("light");
+                } else { element.classList.toggle("dark"); }
+            };
+
+const toggleEl = document.querySelector("#modeToggle")
+toggleEl.addEventListener("click", stateChange());
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+        </script>
     </body>
 
-
-    <body>
-
-    <div class="accordion-body">
-    <div class="accordion">
-      <h1>Frequently Asked Questions</h1>
-      <hr>
-
-      <div class="container">
-        <div class="label">About</div>
-        <div class="content">
-            <p>Hello, my name is Rafael Arroyo, and I am a web development student at the University of Oregon. I am starting a YouTube channel in 2022. Love and enjoy the Pacific Northwest #UpperLeftUSA. For the past 6 years I have been playing the game Ingress where I slay the competition.</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="container">
-        <div class="label">More About me</div>
-        <div class="content">
-            <p>I became interested in Web Development after I started working on Power Automate to create the department workflows in Microsoft Teams. After a few weeks of research and trial and error I was able to digitize all our processes.  I can say that we have avoided a reduction of work because of this implementation. After seeing the power of web applications, I began research which led me to the Coding bootcamp I am enrolled in. It is week 3 and so far it is a healthy challenge. </p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="container">
-        <div class="label">5 Year plan</div>
-        <div class="content">
-            <p>I am interested in becoming a proficient full stack web developer within the nezt year and develop my skill and knowledge in JavaScript. My current skills supass my confidence in my abilities.</p>
-        </div>
-      </div>
-      <hr>
-
-    </div>
-    </div>
-  
-    <script src="./js/app.js"></script>
-    </body>
 </html>

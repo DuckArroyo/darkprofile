@@ -12,6 +12,7 @@
   --lightest: #29648a;
 }
 
+/* Colors for toggle states */
 .dark {
   background-color: var(--darkest);
   color: var(--light);
@@ -26,8 +27,6 @@
   border-radius: 15px;
 }
 
-
-
 body {
   width: 100vw;
 }
@@ -38,26 +37,32 @@ body {
   padding: 50px;
 }
 
-.links {
+/* Links style */
+.links,
+a {
   color: var(--neutral);
   text-decoration: none;
-  padding: 4vh;
+  padding: 1vh;
   text-align: center;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
-@media (min-width: 50rem) {
-  .links {
-    flex-direction: row;
+/* Break point for small screens */
+@media (min-width: 500px) {
+  links {
+    flex-direction: column;
+    padding: 6vh;
   }
 }
-/* W3 School  */
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  display: flex;
+  justify-content: center;
+  background-color: var(--lightest);
+  color: var(--neutral);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -68,85 +73,17 @@ body {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
 .accordion:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
-  background-color: white;
+  padding: 18px;
+  width: 90%;
+  background-color: var(--light);
+  color: var(--dark);
   display: none;
   overflow: hidden;
-}
-
-/* ================= FROM FreeCodeCamp */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-
-body {
-  background-color: #0a2344;
-  font-family: "rubik", sans-serif;
-}
-
-/* h1,
-h2 {
-  text-align: center;
-} */
-
-.accordion {
-  width: 800px;
-  margin: 90px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
-}
-
-.accordion .container {
-  position: relative;
-  margin: 10px 10px;
-}
-
-.accordion .label {
-  position: relative;
-  padding: 10px 0;
-  font-size: 30px;
-  color: black;
-  cursor: pointer;
-}
-
-.accordion .label::before {
-  content: "+";
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  transform: translateY(-50%);
-}
-
-.accordion .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 780px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.accordion hr {
-  width: 100;
-  margin-left: 0;
-  border: 1px solid grey;
-}
-
-.accordion .container.active .content {
-  height: 150px;
-}
-
-.accordion .container.active .label::before {
-  content: "-";
-  font-size: 30px;
+  align-self: center;
 }

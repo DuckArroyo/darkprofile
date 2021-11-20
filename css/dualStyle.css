@@ -4,9 +4,6 @@
   margin: 0;
 }
 
-.links a {
-  color: var(--neutral);
-}
 :root {
   --darkest: rgb(0, 0, 0);
   --dark: #464866;
@@ -29,10 +26,24 @@
   border-radius: 15px;
 }
 
+/* Start Switch */
+
+/* End Switch */
+
 .container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+}
+
+.links {
+  color: var(--neutral);
+  text-decoration: none;
+  padding: 4vh 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 /* W3 School  */

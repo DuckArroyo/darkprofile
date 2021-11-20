@@ -1,6 +1,6 @@
 /*!global */
 * {
-  padding: o;
+  padding: 0;
   margin: 0;
 }
 
@@ -26,26 +26,33 @@
   border-radius: 15px;
 }
 
-/* Start Switch */
 
-/* End Switch */
 
+body {
+  width: 100vw;
+}
 .container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  padding: 50px;
 }
 
 .links {
   color: var(--neutral);
   text-decoration: none;
-  padding: 4vh 0;
+  padding: 4vh;
   text-align: center;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
+@media (min-width: 50rem) {
+  .links {
+    flex-direction: row;
+  }
+}
 /* W3 School  */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -82,10 +89,10 @@ body {
   font-family: "rubik", sans-serif;
 }
 
-h1 {
+/* h1,
+h2 {
   text-align: center;
-  margin: 40px 0;
-}
+} */
 
 .accordion {
   width: 800px;

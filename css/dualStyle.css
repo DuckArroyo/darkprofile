@@ -29,14 +29,33 @@
 
 body {
   width: 100vw;
+  font-family: "Poppins", sans-serif;
 }
+
+#modeToggle {
+  background-color: var(--lightest);
+  color: var(--neutral);
+  padding: 5px;
+  position: static;
+  top: 25px;
+  left: 25px;
+}
+
 .container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   padding: 50px;
+  text-align: center;
 }
 
+h1 {
+  font-family: cursive;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 /* Links style */
 .links,
 a {
@@ -47,6 +66,7 @@ a {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  text-transform: uppercase;
 }
 
 /* Break point for small screens */

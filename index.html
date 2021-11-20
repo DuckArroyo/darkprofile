@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./css/dualStyle.css">
 </head>
 
-<body id="enchilada" class="">
+<body id="enchilada" class="dark">
  <button type="button" id="modeToggle">Toggle</button>
 <div class="container">
         <div>
                 <h1>Rafael Arroyo</h1> 
-                <h2>Entry level <strong>fullstack</strong> Web Developer</h2>
+                <h2><span>Fullstack</span> Web Developer</h2>
                 
         </div>
         <div class="links">
@@ -32,7 +32,6 @@
 
     </div>
 
-        <!-- W3Schools -->
 <div class="container">
 
         <button class="accordion">Section 1</button>
@@ -51,43 +50,8 @@
                 <p>I am interested in becoming a proficient full stack web developer within the nezt year and develop my skill and knowledge in JavaScript. My current skills supass my confidence in my abilities.</p>
             </div>
 </div>
-    
 
-
-    <!-- Questions -->
-  <!-- Event listener, not sure what I am doing wrong -->
-<!-- toggle is working but cant flip back -->
-        <script>
-            function stateChange() {
-                // event.preventDefault();
-                var element = document.getElementById("enchilada");
-                if(element.classList === "dark") {
-                    element.classList.toggle("light");
-                } else { element.classList.toggle("dark"); }
-            };
-
-const toggleEl = document.querySelector("#modeToggle")
-toggleEl.addEventListener("click", stateChange());
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-        </script>
+<script src="./js/app.js" type="text/javaScript"></script>
     </body>
 
 </html>

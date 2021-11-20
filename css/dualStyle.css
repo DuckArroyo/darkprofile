@@ -5,7 +5,7 @@
 }
 
 :root {
-  --darkest: rgb(0, 0, 0);
+  --darkest: #000000;
   --dark: #464866;
   --neutral: #aaabb8;
   --light: #2e9cca;
@@ -16,14 +16,12 @@
 .dark {
   background-color: var(--darkest);
   color: var(--light);
-  border: solid 1px var(--neutral);
   border-radius: 15px;
 }
 
 .light {
   background-color: var(--lightest);
-  color: var(--dark);
-  border: solid 1px var(--neutral);
+  color: var(--darkest);
   border-radius: 15px;
 }
 
@@ -56,6 +54,11 @@ h1 {
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
+h2 span {
+  font-weight: bolder;
+}
+
 /* Links style */
 .links,
 a {
@@ -81,8 +84,8 @@ a {
 .accordion {
   display: flex;
   justify-content: center;
-  background-color: var(--lightest);
-  color: var(--neutral);
+  background-color: var(--light);
+  color: var(--darkest);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -90,6 +93,7 @@ a {
   border: none;
   outline: none;
   transition: 0.4s;
+  font-size: larger;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

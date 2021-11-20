@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/dualStyle.css">
 </head>
 
-<body id="enchilada" class="light">
+<body id="enchilada" class="">
  <button type="button" id="modeToggle">Toggle</button>
 <div class="container">
         <div>
@@ -53,10 +53,10 @@
 
     <!-- Questions -->
   <!-- Event listener, not sure what I am doing wrong -->
-<!-- toggle is  -->
+<!-- toggle is working but cant flip back -->
         <script>
             function stateChange() {
-                event.preventDefault();
+                // event.preventDefault();
                 var element = document.getElementById("enchilada");
                 if(element.classList === "dark") {
                     element.classList.toggle("light");

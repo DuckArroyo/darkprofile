@@ -27,14 +27,15 @@
 
 body {
   width: 100vw;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #modeToggle {
-  background-color: var(--lightest);
+  background-color: #0f9;
   color: var(--neutral);
   padding: 5px;
-  position: static;
+  margin: 10px;
+  /* position: static; */
   top: 25px;
   left: 25px;
 }
@@ -52,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2 span {
